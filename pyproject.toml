@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonpatchpreview"
+version = "1.0.0"
+description = "Apply and preview a practical RFC 6902 JSON Patch subset locally, with add, remove, replace, and test operations plus change summaries."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JSONPatchPreview contributors"}]
+
+[project.scripts]
+json-patch-preview = "json_patch_preview.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bafnayeygian/JSONPatchPreview"
+Issues = "https://github.com/bafnayeygian/JSONPatchPreview/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
